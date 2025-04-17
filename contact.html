@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio website showcasing my skills, projects, and experience.">
+    <title>Carl Lund | Devfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 href="index.html">Carl Lund</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <h1 id="spacer">Carl Lund</h1>
+    </header>
+
+    <section class="contact-form-container">
+        <h2>Let's Get In Touch</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label" >Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required/>
+                </div>
+            </div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required/>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Carl Lund. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

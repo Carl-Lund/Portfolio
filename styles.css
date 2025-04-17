@@ -1,24 +1,37 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #024b30;
 }
+
+/* Header Styles ---------------------------------------------------------------------------- */
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    background-color: #024b30;
+    margin-bottom: 20px;
+    padding: 10px;
 }
-header h1 {
+h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    color: white;
+    font-family: 'Candara';
+}
+#spacer {
+    color: #024b30;
+    background-color: #024b30;
 }
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #444;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    background-color: #024b30;
 }
 nav a {
     color: white;
@@ -27,27 +40,138 @@ nav a {
     display: block;
 }
 nav a:hover {
-    background-color: #555;
+    color: #024b30;
+    background-color: white;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
+/* General Section Styles -------------------------------------------------------------------  */
+
 section {
     padding: 40px;
-    max-width: 1000px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 section p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+/* Home Section Styles --------------------------------------------------------------------- */
+#home {
+    background-color: #024b30;
+    color: white;
+    max-width: 1200px;
+}
+#home img {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+/* Project Section Styles --------------------------------------------------------------------- */
+#projects {
+    max-width: 1200px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+/* Contact Form Styles --------------------------------------------------------------------- */
+.contact-form {
+    max-width: 1000px;
+}
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form #subject, .contact-form #message {
+    width: 97.4%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-size: 16px;
+  background: #fafafa;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    background: #fff;
+}
+  
+.contact-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles --------------------------------------------------------------------- */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #024b30;
     color: white;
 }
