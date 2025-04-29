@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1 href="index.html">Carl Lund</h1>
+        <a href="/index.html"><h1>Carl Lund</h1></a>
         <nav>
             <a href="/index.html">Home</a>
             <a href="/projects.html">Projects</a>
@@ -22,7 +22,8 @@
 
     <section class="contact-form-container">
         <h2>Let's Get In Touch</h2>
-        <form class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="26f8172e-743a-4f97-bf65-1eb07c65af3b">
             <div class="form-row">
                 <div class="form-group">
                     <label for="name" id="name-label">Name</label>
