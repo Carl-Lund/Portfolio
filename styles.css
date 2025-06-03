@@ -1,3 +1,9 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+} 
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -15,43 +21,45 @@ body {
 header {
     display: flex;
     background-color: #024b30;
-    margin-bottom: 20px;
-    padding: 10px;
-    height: 55px;
+    height: 5rem;
 }
 header a {
     text-decoration: none;
 }
-h1 {
-    margin: 0;
+header h1 {
+    padding: 1rem;
     font-size: 2.0rem;
     color: white;
     font-family: 'Candara';
 }
 #spacer {
+    padding: 1rem;
+    font-size: 2.0rem;
     color: #024b30;
     background-color: #024b30;
+    font-family: 'Candara';
 }
 nav {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
     background-color: #024b30;
     gap: 10px;
 }
 nav a {
+    height: 3.3rem;
     color: white;
-    text-decoration: none;
-    padding: 15px 25px;
-    display: block;
+    padding: 1rem 1.5rem;
     border-radius: 6px;
-    font-size: medium;
+    font-size: 1rem;
     transition: background 0.3s ease, font-size 0.3s ease;
 }
 nav a:hover {
     color: #024b30;
     background-color: white;
     border-radius: 6px;
-    font-size: larger;
+    font-size: 1.25rem;
 }
 /* General Section Styles -------------------------------------------------------------------  */
 
@@ -59,7 +67,6 @@ section {
     padding: 40px;
     margin: 0 auto;
     background-color: white;
-    margin-bottom: 20px;
 }
 section h2 {
     font-size: 2rem;
@@ -160,7 +167,7 @@ section p {
     color: white;
 }
 .contact-form #subject, .contact-form #message {
-    width: 97.4%;
+    width: 100%;
 }
 .contact-form input,
 .contact-form textarea {
@@ -168,7 +175,7 @@ section p {
   border: 1px solid #ccc;
   border-radius: 6px;
   resize: none;
-  font-size: 16px;
+  font-size: 1rem;
   background: #fafafa;
 }
 
@@ -210,4 +217,32 @@ footer {
     padding: 20px;
     background-color: #024b30;
     color: white;
+}
+
+@media screen and (min-width: 64rem) {
+    
+}
+
+@media screen and (max-width: 48rem) {
+    header {
+        display: block;
+    }
+    header h1 {
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .form-row {
+        display: block;
+    }
+    .form-group {
+        width: 100%;
+    }
 }
